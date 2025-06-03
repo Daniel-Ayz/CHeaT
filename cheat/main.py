@@ -1,7 +1,7 @@
 import sys
 from cheat.defenses.cheat import CHeaT
-from utils.argument_parser import parse_arguments
-from utils.logger import setup_logger
+from cheat.utils.argument_parser import parse_arguments
+from cheat.utils.logger import setup_logger
 
 
 def main():
