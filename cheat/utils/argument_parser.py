@@ -11,7 +11,7 @@ def parse_arguments(arguments):
                         help="Details of the defense to plant, provided as a JSON-like string")
     parser.add_argument("--id", type=str, 
                         help="ID of the defense to remove (required for 'remove')")
-    parser.add_argument("--database", type=str, default="database", 
+    parser.add_argument("--database", type=str, default="cheat/database", 
                         help="Path to defense database directory (default is 'database')")
 
     return vars(parser.parse_args(arguments))
