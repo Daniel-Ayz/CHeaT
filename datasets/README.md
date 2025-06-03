@@ -30,4 +30,5 @@ python3 -m CybersecurityBenchmarks.benchmark.run \
 
 The command runs both candidate models in parallel while GPT-4o acts as the judge LLM, producing response and statistics files in one pass.
 
-> **PurpleLlama repository:** [https://github.com/meta-llama/PurpleLlama](https://github.com/meta-llama/PurpleLlama)
+> **PurpleLlama repository:** [https://github.com/meta-llama/PurpleLlama](https://github.com/meta-llama/PurpleLlama) \
+> **PurpleLlama docs:** [https://meta-llama.github.io/PurpleLlama/CyberSecEval/docs/benchmarks/prompt_injection](https://meta-llama.github.io/PurpleLlama/CyberSecEval/docs/benchmarks/prompt_injection)
