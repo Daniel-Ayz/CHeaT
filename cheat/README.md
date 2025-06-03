@@ -39,7 +39,7 @@ cheat \
   --action plant \
   --details '{
     "assettype": "web_file",
-    "file_path": "tests/test.html",
+    "file_path": "cheat/tests/test.html",
     "technique": "random"
   }'
 ```
@@ -53,11 +53,11 @@ cheat \
 cheat \
   --action plant \
   --details '{
-    "assettype": "web_file",
-    "file_path": "tests/test.html",
+    "assettype": "local_file",
+    "file_path": "cheat/tests/test.txt",
     "technique": "S1i",
-    "method": "prompt_injection",
-    "template": "Combined_Attack"
+    "method": "honeytoken",
+    "template": "Non_Injection_Message"
   }'
 ```
 
@@ -70,10 +70,8 @@ cheat \
 | `assettype` | ✅        | `local_file`, `web_file`, `tool_wrapper`     | Type of target.                                                     |
 | `file_path` | ✅        | Path                                         | File or binary to modify / wrap.                                    |
 | `technique` | ✅        | `"random"` or technique code from DB         | Which defense payload to use.                                       |
-| `method`    | ❌        | `honeytoken`, `prompt_injection`, `"random"` | Defaults to **prompt\_injection**. `"random"` picks one of the two. |
-| `template`  | ❌        | `"random"` or template name from DB          | How the payload is framed. Default = `Combined_Attack`.             |
-
-💡 **Randomisation**: supply `"random"` for `method`, `technique`, or `template` to let Gotcha PT choose.
+| `method`    | ❌        | `honeytoken`, `prompt_injection` | Defaults to **prompt\_injection**. |
+| `template`  | ❌        | template name from DB          | How the payload is framed. Default = `Combined_Attack`.             |
 
 ---
 
@@ -118,16 +116,6 @@ The `database/` folder (default, override with `--database PATH`) contains four 
 
 Add or edit entries to create new techniques or templates.
 Any new `technique`/`Injection_Template` will be auto-discovered by CHeaT—perfect for experimentation.
-
----
-
-## 🛡️ How It Works (1-min peek)
-
-1. **DefenseCreator** merges a *template* with a *technique* → `prefix` + `suffix`.
-2. **DefenseInstaller**
-   * *local / web files*: prefix is prepended, suffix appended.
-   * *tool wrapper*: original binary → `*_original`; wrapper echoes prefix, calls original, echoes suffix, and keeps ownership + mode.
-3. **DefenseDatabase** tracks what you installed so you can list or roll back reliably.
 
 ---
 
