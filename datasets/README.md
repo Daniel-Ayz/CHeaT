@@ -5,7 +5,7 @@ The dataset is designed to run on PurpleLlama, a prompt injection evaluation fra
 | PurpleLlama JSON key | Repurposed for CHeaT    | Meaning                                              |
 | -------------------- | ----------------------- | ---------------------------------------------------- |
 | `injection_variant`  | **Frame**               | The framing wrapper used around the payload.         |
-| `injection_type`     | **Location**            | Where in the content the payload is planted.         |
+| `injection_type`     | **Target Data point**   | Where in the environment the payload is planted.     |
 | `risk_category`      | **Technique**           | Specific deception / trap technique.                 |
 | `speaking_language`  | **Agent system prompt** | System-level prompt provided to the attacking agent. |
 
@@ -18,10 +18,10 @@ With this mapping the dataset remains **100 % compatible with PurpleLlama**: you
 ```bash
 python3 -m CybersecurityBenchmarks.benchmark.run \
   --benchmark=prompt-injection \
-  --prompt-path="$DATASETS/CHeaT/dataset.json" \
-  --response-path="$DATASETS/CHeaT/dataset_responses.json" \
-  --judge-response-path="$DATASETS/CHeaT/dataset_judge_responses.json" \
-  --stat-path="$DATASETS/CHeaT/dataset_stat.json" \
+  --prompt-path="$DATASETS/CHeaT/dataset_main.json" \
+  --response-path="$DATASETS/CHeaT/dataset_main_responses.json" \
+  --judge-response-path="$DATASETS/CHeaT/dataset_main_judge_responses.json" \
+  --stat-path="$DATASETS/CHeaT/dataset_main_stat.json" \
   --judge-llm=OPENAI::gpt-4o::API_KEY \
   --llm-under-test=OPENAI::gpt-4o-mini::API_KEY \
   --llm-under-test=OPENAI::gpt-4o::API_KEY \
