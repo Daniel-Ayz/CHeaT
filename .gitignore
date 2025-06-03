@@ -1,0 +1,31 @@
+# ---- Python basics ----
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.dll
+
+# Virtual-envs
+.venv/
+env/
+venv/
+
+# Build artefacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDEs / editors
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# (Optional) large research artefacts
+datasets/
+ctf-machines/
+token-landmines/
