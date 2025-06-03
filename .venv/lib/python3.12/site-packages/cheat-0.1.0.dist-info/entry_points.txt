@@ -1,0 +1,2 @@
+[console_scripts]
+cheat = cheat.main:main

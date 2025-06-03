@@ -1,0 +1,3 @@
+# requirements.txt
+# Everything used by CHeaT is in the Python standard library.
+# Tested with Python >=3.8.

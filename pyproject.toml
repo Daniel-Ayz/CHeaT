@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cheat"
+version = "0.1.0"
+description = "CHeaT – Lightweight Defense Planting CLI"
+requires-python = ">=3.8"
+
+[project.scripts]
+cheat = "cheat.main:main"
+
+# --- NEW ---
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+include = ["cheat*"]      # only the tool package
+exclude = ["datasets*", "ctf-machines*", "token-landmines*", "demo-notebook*"]

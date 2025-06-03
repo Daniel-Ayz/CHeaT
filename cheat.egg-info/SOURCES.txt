@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+./cheat/__init__.py
+./cheat/main.py
+./cheat/defenses/__init__.py
+./cheat/defenses/cheat.py
+./cheat/defenses/defense_creator.py
+./cheat/defenses/defense_database.py
+./cheat/defenses/defense_installer.py
+./cheat/utils/__init__.py
+./cheat/utils/argument_parser.py
+./cheat/utils/logger.py
+cheat.egg-info/PKG-INFO
+cheat.egg-info/SOURCES.txt
+cheat.egg-info/dependency_links.txt
+cheat.egg-info/entry_points.txt
+cheat.egg-info/top_level.txt
