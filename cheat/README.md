@@ -22,7 +22,7 @@ Everything is driven from a single `main.py` entry point and a small JSON databa
 git clone https://github.com/Daniel-Ayz/cheat.git
 cd cheat
 python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+pip install -e .
 ```
 
 ---
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 <summary><strong>Minimal – random technique & default method</strong></summary>
 
 ```bash
-python main.py \
+cheat \
   --action plant \
   --details '{
     "assettype": "web_file",
@@ -50,7 +50,7 @@ python main.py \
 <summary><strong>Full control – explicit technique, method & template</strong></summary>
 
 ```bash
-python main.py \
+cheat \
   --action plant \
   --details '{
     "assettype": "web_file",
@@ -80,7 +80,7 @@ python main.py \
 ### 2. List Installed Defenses
 
 ```bash
-python main.py --action list --type installed
+cheat --action list --type installed
 ```
 
 (Use `--type available` to dump everything defined in the DB.)
@@ -92,13 +92,13 @@ python main.py --action list --type installed
 #### a. Remove all at once
 
 ```bash
-python main.py --action remove_all
+cheat --action remove_all
 ```
 
 #### b. Remove one by ID
 
 ```bash
-python main.py --action remove --id "997df4f9-4268-45cf-b64b-f0130be0b9a9"
+cheat --action remove --id "997df4f9-4268-45cf-b64b-f0130be0b9a9"
 ```
 
 Obtain the ID column from `--action list`.
