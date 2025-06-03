@@ -7,7 +7,7 @@
   <a href="#-repository-layout">Repo&nbsp;Layout</a> •
   <a href="#-paper">Paper</a> •
   <a href="#-datasets">Datasets</a> •
-  <a href="#-ctf-machines">CTF&nbspMachines</a> •
+  <a href="#%EF%B8%8F-ctf-machines)">CTF&nbspMachines</a> •
   <a href="#-token-landmines">Token&nbsp;Landmines</a> •
   <a href="#-demo-notebook">Demo&nbsp;Notebook</a> •
   <a href="#-citation">Citation</a>
