@@ -15,13 +15,18 @@
 
 ---
 
-## 🌟 Project Overview
-CHeaT (Cloak–Honey–Trap) is a CLI-based tool that **defends networks against autonomous LLM-powered pentesting agents** by planting string-based payloads into network assets. These paylaods are designed to distrupt and detect LLM-based pentesting agents. "
+## 1. Overview
 
-Defeneses:
-1. **Cloaking** sensitive data with misdirection  
-2. Planting **Honey** tokens to detect & fingerprint LLM agents  
-3. Setting **Traps** that stall or crash abusive agents  
+**CHeaT (Cloak–Honey–Trap)** is a command-line tool designed to **defend networks against autonomous, LLM-powered penetration testing agents**. It works by embedding string-based payloads into network assets—payloads specifically crafted to **disrupt, deceive, and detect** such agents.
+
+### Core Defense Strategies:
+
+1. **Cloaking** – Obfuscate sensitive data with strategic misdirection
+2. **Honey** – Embed tokens to detect and fingerprint LLM-driven agents
+3. **Traps** – Deploy inputs that stall, confuse, or crash malicious automation
+
+CHeaT implements **6 distinct strategies** encompassing **15 payload generation techniques**, forming a layered, proactive defense against LLM-based threats.
+
 
 For more information on how it works, please see our USENIX Security ’25 publication:
 
@@ -31,7 +36,7 @@ Daniel Ayzenshteyn, Weiss, Roy, and Yisroel Mirsky. "Cloak, Honey, Trap: Proacti
 
 ---
 
-## 🚀 Tool Quick Start
+## 2. Tool Quick Start 🚀
 
 > **TL;DR**
 
@@ -67,7 +72,7 @@ See [`cheat/README.md`](cheat/README.md) for full CLI docs.
 
 ---
 
-## 📂 Repository Layout
+## 3. Repository Layout 
 
 ```
 CHeaT/
@@ -82,21 +87,15 @@ CHeaT/
 └─ README.md            ← you are here
 ```
 
----
 
-## 📜 Paper
 
-The full methodology, threat model, and evaluation are in **“Cloak, Honey, Trap: Proactive Defenses Against LLM Agents.”**
-Read the PDF or check the arXiv link in the paper header for details.
-Key numbers:
+### 3.1 ``cheat/``
 
-* 6 strategies / 15 techniques
-* 11 CTF machines
-* Works even with GPT-4o back-end agents
+Here you will find the source code to the CHeaT payload injection tool, along with instruction in [`cheat/README.md`](cheat/README.md)
 
----
+### 3.2 ``datasets/``
 
-## 📊 Datasets
+In this directory you will find the datasets used in the paper's evalautions.
 
 Directory **`datasets/`** collects:
 
@@ -116,27 +115,31 @@ datasets/
 * **`dataset_boosted_with_pi.json`** – identical structure but built from the boosted payloads.
 * **`dataset_unicode_honeytokens`** – dataset used to evaluate the honeytokens (Set A and Set B in T3.2)
   
----
 
-## 🖥️ CTF Machines
 
-11 Ready-to-import OVA VMs used in the paper’s evaluation:
+### 3.3 ``ctf-machines/``
+
+This directory holds the 11 CTF machines (ready-to-import OVA VMs) created for the paper and used in the paper’s evaluation:
 
 `UbuntuX`, `VulBox`, `DGPro`, `Imagery`, `CornHub`, `Tr4c3`, `Hackme`, `Shocker`, `Corpnet`, `Kermit`, `GitGambit`
 
-* Each folder contains the machines image (.ova) and a walkthrough solution.
+In each sub-dir you will find a walkthrough solution. For the respective .ova Vm files, please visit our Zenodo dataset.
 
----
+If you use these CTFs in your work, please cite our paper.
 
-## 💣 Token Landmines
 
-Detect and evaluate “landmine tokens”—rare tokens that cause LLMs to produce gibberish or hallucinations.
 
----
+### 3.4 ``token-landmines/``
 
-## 📒 Demo Notebook
+Here you will find the code used to generate the “landmine tokens” from the paper. Token landmines are rare sequences of tokens that corrupt a model's internal state causing it to output gibberish or hallucinations.
 
-Launch the Jupyter notebook in `demo-notebook/` to poke and prod PentestGPT in a safe sandbox:
+The contents of this folder will be empty until 1 month after publicaiton to give vendors time to patch their LLM services.
+
+
+
+### 3.5 ``demo-notebook/``
+
+Here you will find a Jupyter notebook which you can use to poke and prod PentestGPT in a safe sandbox:
 
 - load saved attack snapshots,
 - drop in new hints / traps,
@@ -144,15 +147,15 @@ Launch the Jupyter notebook in `demo-notebook/` to poke and prod PentestGPT in a
 
 ---
 
-## 📄 License
+## 4. License 📄
 
 This project is licensed under the CC BY-NC 4.0 License. See the [LICENSE](./LICENSE) file for details.
 
 ---
 
-## 🤝 Citation
+## 5. Citation 🤝
 
-For citations:
+If you use our code, datasets, or CTF VMs, please cite us:
 
 ```bibtex
 @inproceedings{Ayzenshteyn2025CHeaT,
