@@ -16,13 +16,18 @@
 ---
 
 ## 🌟 Project Overview
-CHeaT (Cloak–Honey–Trap) is a research toolkit that **defends networks against autonomous LLM-powered pentesting agents** by:
+CHeaT (Cloak–Honey–Trap) is a CLI-based tool that **defends networks against autonomous LLM-powered pentesting agents** by planting string-based payloads into network assets. These paylaods are designed to distrupt and detect LLM-based pentesting agents. "
 
+Defeneses:
 1. **Cloaking** sensitive data with misdirection  
 2. Planting **Honey** tokens to detect & fingerprint LLM agents  
 3. Setting **Traps** that stall or crash abusive agents  
 
-All techniques are described in our USENIX Security ’25 white-paper and implemented in a light-weight CLI.
+For more information on how it works, please see our USENIX Security ’25 publication:
+
+```
+Daniel Ayzenshteyn, Weiss, Roy, and Yisroel Mirsky. "Cloak, Honey, Trap: Proactive Defenses Against LLM Agents" 34rth USENIX Security Symposium (USENIX Security 25). 2025.‏
+```
 
 ---
 
