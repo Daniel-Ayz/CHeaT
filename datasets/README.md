@@ -1,3 +1,5 @@
+# Datasets and Payloads
+
 The dataset is designed to run on PurpleLlama, a prompt injection evaluation framework that we repurposed to evaluate our deception strategies against autonomous LLM-based cyber agents. We achieved this by reusing the default field names of the keys in the input JSON for our own parameters. This was done as follows:
 
 ### Dataset ↔ PurpleLlama Field Mapping
