@@ -40,12 +40,12 @@ The command runs both candidate models in parallel while GPT-4o acts as the judg
 
 ```
 datasets/
-├─ dataset\_main.json
-├─ dataset\_boosted\_with\_pi.json
-├─ dataset\_unicode\_honeytokens.json
+├─ dataset_main.json
+├─ dataset_boosted_with_pi.json
+├─ dataset_unicode_honeytokens.json
 └─payloads/
   ├─ payloads.json
-  └─ payloads\_boosted\_with\_prompt\_injection.json
+  └─ payloads_boosted_with_prompt_injection.json
 ````
 
 * **`payloads.json`** – the framed payloads constructed in the paper.  
