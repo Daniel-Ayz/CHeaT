@@ -32,7 +32,7 @@ All techniques are described in our USENIX Security ’25 white-paper and implem
 
 ```bash
 # clone repo & enter tool folder
-git clone https://github.com/your-user/CHeaT.git
+git clone https://github.com/Daniel-Ayz/CHeaT.git
 cd CHeaT
 
 # optional: create venv
@@ -94,32 +94,44 @@ Key numbers:
 ## 📊 Datasets
 
 Directory **`datasets/`** collects:
+```
+datasets/
+├─ dataset\_main.json
+└─ dataset\_boosted\_with\_pi.json
+└─payloads/
+  ├─ payloads.json
+  └─ payloads\_boosted\_with\_prompt\_injection.json
+````
 
+* **`payloads.json`** – the framed payloads constructed in the paper.  
+* **`payloads_boosted_with_prompt_injection.json`** – payloads that are *boosted* with a prompt-injection wrapper.  
+* **`dataset_main.json`** – embeds the framed payloads at multiple target data points and system prompts (uses `payloads.json`).  
+* **`dataset_boosted_with_pi.json`** – identical structure but built from the boosted payloads.
 ---
 
 ## 🖥️ CTF Machines
 
-Ready-to-import OVA VMs used in the paper’s evaluation:
+11 Ready-to-import OVA VMs used in the paper’s evaluation:
 
-* `UbuntuX`, `VulBox`, `Shocker`, …
-* Each folder contains **`README.md`** with flag locations & solution.
+`UbuntuX`, `VulBox`, `DGPro`, `Imagery`, `CornHub`, `Tr4c3`, `Hackme`, `Shocker`, `Corpnet`, `Kermit`, `GitGambit`
+
+* Each folder contains the machines image (.ova) and a walkthrough solution.
 
 ---
 
 ## 💣 Token Landmines
 
-`token-landmines/` provides per-model rare-token sequences that induce hallucinations or context collapse.
-Use them in **Trap T4.4** or study robustness across models.
+Detect and evaluate “landmine tokens”—rare tokens that cause LLMs to produce gibberish or hallucinations.
 
 ---
 
 ## 📒 Demo Notebook
 
-Launch the Jupyter notebook in `demo-notebook/` to:
+Launch the Jupyter notebook in `demo-notebook/` to poke and prod PentestGPT in a safe sandbox:
 
-* Step through the white-paper experiments
-* Mix-and-match techniques live
-* Sandbox to play in
+- load saved attack snapshots,
+- drop in new hints / traps,
+- watch how the agent reasons and what commands it generates.
 
 ---
 
