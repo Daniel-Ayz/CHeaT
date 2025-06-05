@@ -25,9 +25,9 @@ Defeneses:
 
 For more information on how it works, please see our USENIX Security ’25 publication:
 
-```
+``
 Daniel Ayzenshteyn, Weiss, Roy, and Yisroel Mirsky. "Cloak, Honey, Trap: Proactive Defenses Against LLM Agents" 34rth USENIX Security Symposium (USENIX Security 25). 2025.‏
-```
+``
 
 ---
 
