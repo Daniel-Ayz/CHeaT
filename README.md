@@ -146,7 +146,7 @@ Launch the Jupyter notebook in `demo-notebook/` to poke and prod PentestGPT in a
 
 ## 📄 License
 
-MIT © 2025 Ayzenshteyn • Weiss • Mirsky
+This project is licensed under the CC BY-NC 4.0 License. See the [LICENSE](./LICENSE) file for details.
 
 ---
 
@@ -162,5 +162,6 @@ For citations:
   year={2025}
 }
 ```
+
 
 Happy trapping! 🕸️
