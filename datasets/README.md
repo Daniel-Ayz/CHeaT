@@ -41,7 +41,8 @@ The command runs both candidate models in parallel while GPT-4o acts as the judg
 ```
 datasets/
 ├─ dataset\_main.json
-└─ dataset\_boosted\_with\_pi.json
+├─ dataset\_boosted\_with\_pi.json
+├─ dataset\_unicode\_honeytokens.json
 └─payloads/
   ├─ payloads.json
   └─ payloads\_boosted\_with\_prompt\_injection.json
@@ -51,5 +52,6 @@ datasets/
 * **`payloads_boosted_with_prompt_injection.json`** – payloads that are *boosted* with a prompt-injection wrapper.  
 * **`dataset_main.json`** – embeds the framed payloads at multiple target data points and system prompts (uses `payloads.json`).  
 * **`dataset_boosted_with_pi.json`** – identical structure but built from the boosted payloads.
+* **`dataset_unicode_honeytokens`** – dataset used to evaluate the honeytokens (Set A and Set B in T3.2)
 
 ---
