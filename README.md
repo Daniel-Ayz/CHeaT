@@ -125,6 +125,8 @@ This directory holds the 11 CTF machines (ready-to-import OVA VMs) created for t
 
 In each sub-dir you will find a walkthrough solution. For the respective .ova Vm files, please visit our Zenodo dataset.
 
+https://zenodo.org/records/15601740
+
 If you use these CTFs in your work, please cite our paper.
 
 
