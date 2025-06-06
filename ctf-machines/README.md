@@ -1,10 +1,8 @@
 # CTF Machines – Evaluation Corpus
 
 This directory contains the vulnerable virtual machines (OVA builds) used to evaluate **CHeaT** in our paper.  
-Each sub-folder holds:
-
-* **`box.ova`** – The CTF machine itself
-* **`solution.pdf`** – A walkthrough for the CTF
+In each sub-dir you will find a walkthrough solution. For the respective .ova Vm files, please visit our Zenodo dataset:
+https://zenodo.org/records/15601740
 
 ---
 
