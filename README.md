@@ -3,15 +3,16 @@
 </h1>
 
 <p align="center">
-  <a href="#-tool-quick-start">Quick&nbsp;Start</a> •
-  <a href="#-repository-layout">Repo&nbsp;Layout</a> •
-  <a href="#-paper">Paper</a> •
-  <a href="#-datasets">Datasets</a> •
-  <a href="#%EF%B8%8F-ctf-machines">CTF&nbspMachines</a> •
-  <a href="#-token-landmines">Token&nbsp;Landmines</a> •
-  <a href="#-demo-notebook">Demo&nbsp;Notebook</a> •
-  <a href="#-citation">Citation</a>
+  <a href="#2-tool-quick-start">Quick&nbsp;Start</a> •
+  <a href="#3-repository-layout">Repo&nbsp;Layout</a> •
+  <a href="#1-overview">Paper</a> •
+  <a href="#32-datasets">Datasets</a> •
+  <a href="#33-ctf-machines">CTF&nbsp;Machines</a> •
+  <a href="#34-token-landmines">Token&nbsp;Landmines</a> •
+  <a href="#35-demo-notebook">Demo&nbsp;Notebook</a> •
+  <a href="#5-citation">Citation</a>
 </p>
+
 
 ---
 
@@ -31,7 +32,7 @@ CHeaT implements **6 distinct strategies** encompassing **15 payload generation 
 For more information on how it works, please see our USENIX Security ’25 publication:
 
 ``
-Daniel Ayzenshteyn, Weiss, Roy, and Yisroel Mirsky. "Cloak, Honey, Trap: Proactive Defenses Against LLM Agents" 34rth USENIX Security Symposium (USENIX Security 25). 2025.‏
+Daniel Ayzenshteyn, Weiss, Roy, and Yisroel Mirsky. "Cloak, Honey, Trap: Proactive Defenses Against LLM Agents" 34th USENIX Security Symposium (USENIX Security 25). 2025.‏
 ``
 
 ---
@@ -91,11 +92,11 @@ CHeaT/
 
 ### 3.1 ``cheat/``
 
-Here you will find the source code to the CHeaT payload injection tool, along with instruction in [`cheat/README.md`](cheat/README.md)
+Here you will find the source code to the CHeaT payload injection tool, along with instructions in [`cheat/README.md`](cheat/README.md)
 
 ### 3.2 ``datasets/``
 
-In this directory you will find the datasets used in the paper's evalautions.
+In this directory, you will find the datasets used in the paper's evaluations.
 
 Directory **`datasets/`** collects:
 
@@ -123,7 +124,7 @@ This directory holds the 11 CTF machines (ready-to-import OVA VMs) created for t
 
 `UbuntuX`, `VulBox`, `DGPro`, `Imagery`, `CornHub`, `Tr4c3`, `Hackme`, `Shocker`, `Corpnet`, `Kermit`, `GitGambit`
 
-In each sub-dir you will find a walkthrough solution. For the respective .ova Vm files, please visit our Zenodo dataset.
+In each subdirectory, you will find a walkthrough solution. For the respective .ova VM files, please visit our Zenodo dataset.
 
 https://zenodo.org/records/15601740
 
@@ -133,9 +134,9 @@ If you use these CTFs in your work, please cite our paper.
 
 ### 3.4 ``token-landmines/``
 
-Here you will find the code used to generate the “landmine tokens” from the paper. Token landmines are rare sequences of tokens that corrupt a model's internal state causing it to output gibberish or hallucinations.
+Here you will find the code used to generate the “landmine tokens” from the paper. Token landmines are rare sequences of tokens that corrupt a model's internal state, causing it to output gibberish or hallucinations.
 
-The contents of this folder will be empty until 1 month after publicaiton to give vendors time to patch their LLM services.
+The contents of this folder will remain empty for one month after publication, allowing vendors time to patch their LLM services.
 
 
 
@@ -143,15 +144,15 @@ The contents of this folder will be empty until 1 month after publicaiton to giv
 
 Here you will find a Jupyter notebook which you can use to poke and prod PentestGPT in a safe sandbox:
 
-- load saved attack snapshots,
-- drop in new hints / traps,
-- watch how the agent reasons and what commands it generates.
+- Load saved attack snapshots,
+- Drop in new hints/traps,
+- Watch how the agent reasons and what commands it generates.
 
 ---
 
 ## 4. License 📄
 
-This project is licensed under the CC BY-NC 4.0 License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the CC BY-NC 4.0 License. Please take a look at the [LICENSE](./LICENSE) file for details.
 
 ---
 
