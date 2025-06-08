@@ -3,14 +3,14 @@
 </h1>
 
 <p align="center">
+  <a href="#1-overview">Paper</a> •
   <a href="#2-tool-quick-start">Quick&nbsp;Start</a> •
   <a href="#3-repository-layout">Repo&nbsp;Layout</a> •
-  <a href="#1-overview">Paper</a> •
   <a href="#32-datasets">Datasets</a> •
   <a href="#33-ctf-machines">CTF&nbsp;Machines</a> •
   <a href="#34-token-landmines">Token&nbsp;Landmines</a> •
   <a href="#35-demo-notebook">Demo&nbsp;Notebook</a> •
-  <a href="#citation">Citation</a>
+  <a href="#5-citation">Citation</a>
 </p>
 
 
@@ -156,7 +156,7 @@ This project is licensed under the CC BY-NC 4.0 License. Please take a look at t
 
 ---
 
-## 5. Citation 🤝
+## 5. Citation
 
 If you use our code, datasets, or CTF VMs, please cite us:
 
