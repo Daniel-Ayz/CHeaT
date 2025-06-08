@@ -10,7 +10,7 @@
   <a href="#33-ctf-machines">CTF&nbsp;Machines</a> •
   <a href="#34-token-landmines">Token&nbsp;Landmines</a> •
   <a href="#35-demo-notebook">Demo&nbsp;Notebook</a> •
-  <a href="#5-citation">Citation</a>
+  <a href="#citation">Citation</a>
 </p>
 
 
