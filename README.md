@@ -162,7 +162,7 @@ If you use our code, datasets, or CTF VMs, please cite us:
 
 ```bibtex
 @inproceedings{Ayzenshteyn2025CHeaT,
-  title={{CHeaT}: Cloak, Honey, Trap – Proactive Defenses Against LLM Agents},
+  title={Cloak, Honey, Trap: Proactive Defenses Against LLM Agents},
   author={Daniel Ayzenshteyn and Roy Weiss and Yisroel Mirsky},
   booktitle={USENIX Security},
   year={2025}
